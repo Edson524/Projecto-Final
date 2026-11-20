@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. VARIÁVEIS E CORES DO SISTEMA (DESIGN TOKENS)
+   1.     DESIGN
    ========================================================================== */
 :root {
   /* Superfícies */
@@ -74,9 +74,18 @@
 }
 
 /* ==========================================================================
-   2. ESTILOS BASE E TIPOGRAFIA GERAL / CRISTIANO RONALDO 
+   2. ESTILOS BASE GERAL / CRISTIANO RONALDO 
    ========================================================================== */
-body {
+
+   html{
+  scrollbar-width: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+   body {
   background-color: var(--surface);
 }
 
@@ -86,13 +95,11 @@ h1 {
 
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   color: var(--secondary);
 }
 
-h6 {
+h5 {
   font-family: "Manrope", sans-serif;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -114,7 +121,8 @@ header {
   align-items: center;
   background-color: var(--surface);
   padding: 15px 60px;
-  min-height: 50px;
+  min-height: 30px;
+  
 }
 
 #f {
@@ -188,7 +196,6 @@ header img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 /* ==========================================================================
@@ -221,7 +228,7 @@ header img {
   border-radius: 10px;
 }
 
-#introducaonome {
+#introducaonome {   
   display: flex;
   flex-direction: column;
   justify-content: center;
